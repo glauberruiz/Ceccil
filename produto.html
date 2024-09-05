@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <style>
+        .product-images img {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .product-info {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="product-images">
+                    <img src="https://via.placeholder.com/400x400" alt="Product Image 1">
+                    <img src="https://via.placeholder.com/400x400" alt="Product Image 2">
+                    <img src="https://via.placeholder.com/400x400" alt="Product Image 3">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>Nome do Produto</h2>
+                <p><strong>Preço: </strong>R$ 99,99</p>
+                <form>
+                    <div class="form-group">
+                        <label for="size">Tamanho:</label>
+                        <select class="form-control" id="size">
+                            <option>PP</option>
+                            <option>P</option>
+                            <option>M</option>
+                            <option>G</option>
+                            <option>GG</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Adicionar ao Carrinho</button>
+                </form>
+                <div class="product-info">
+                    <h3>Descrição do Produto</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero in nunc
+                        egestas, eget blandit ex faucibus. Sed viverra metus nec sem imperdiet, vitae volutpat nisl
+                        ultricies.</p>
+                    <h3>Especificações</h3>
+                    <ul>
+                        <li>Material: Algodão</li>
+                        <li>Cores disponíveis: Azul, Branco, Preto</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (opcional, necessário apenas se você precisar de funcionalidades como dropdowns) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+8Qr95+X3CG0eW6OfpU2tc+1BQakKRfYfkt"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

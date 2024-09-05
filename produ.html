@@ -1,0 +1,122 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="/product.css">
+    <!-- Custom CSS -->
+    <style>
+        .product-images img {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .product-info {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .thumbnail-images img {
+            max-width: 80px;
+            border: 1px solid #ddd;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+    </style>
+<header>
+    <div class="container mt-5">
+        <a href="/index.html">
+        <button class="btn btn-danger btn-lg">Voltar</button>
+        </a>
+    </div>
+</header>
+</head>
+
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="product-images">
+                    <img src="/image/salto-2 1.svg" alt="Product Image 1" id="mainImage">
+                </div>
+                <div class="thumbnail-images mt-3">
+                    <img src="/image/vestido preto colado.svg" alt="Thumbnail Image 1"
+                        onclick="changeImage(this)">
+                    <img src="/image/tenis social.svg" alt="Thumbnail Image 2"
+                        onclick="changeImage(this)">
+                    <img src="/image/Banner_site.png" alt="Thumbnail Image 3"
+                        onclick="changeImage(this)">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>Vestido colado</h2>
+                <p><strong>Preço: </strong>R$ 99,99</p>
+                <form>
+                    <div class="form-group">
+                        <label for="size">Tamanho:</label>
+                        <select class="form-control" id="size">
+                            <option>PP</option>
+                            <option>P</option>
+                            <option>M</option>
+                            <option>G</option>
+                            <option>GG</option>
+                        </select>
+                        <div class="form-group mt-2">
+                            <label for="color">Cor:</label>
+                            <select class="form-control" id="color">
+                                <option value="branco">Branco</option>
+                                <option value="preto">Preto</option>
+                                <option value="amarelo">Amarelo</option>
+                                <option value="azul">Azul</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-warning btn-lg btn-block mb-2">Adicionar ao Carrinho</button>
+                    <button type="submit" class="btn btn-danger btn-lg btn-block">Alugar</button>
+                </form>
+                <div class="product-info mb-5">
+                    <h3>Descrição do Produto</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero in nunc
+                        egestas, eget blandit ex faucibus. Sed viverra metus nec sem imperdiet, vitae volutpat nisl
+                        ultricies.</p>
+                    <h3>Especificações</h3>
+                    <ul>
+                        <li>Material: Algodão</li>
+                        <li>Cores disponíveis: Branco, preto, amarelo e azul</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (opcional, necessário apenas se você precisar de funcionalidades como dropdowns) -->
+        <footer class="bg-dark py-3">
+            <div class="container">
+              <p class="d-block text-center">
+                <span class="text-light">Todos os direitos reservado</span>
+                <a href="#" class="text-warning"><i class="bi bi-c-circle "></i></a>
+              </p>
+            </div>
+          </footer>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+8Qr95+X3CG0eW6OfpU2tc+1BQakKRfYfkt"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function changeImage(img) {
+            var mainImage = document.getElementById('mainImage');
+            mainImage.src = img.src;
+        }
+    </script>
+</body>
+
+</html>

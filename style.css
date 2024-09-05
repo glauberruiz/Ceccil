@@ -92,28 +92,89 @@ a{
 /* Formatando parallax - Image Pixed */
 
 .parallax{
-    background: url(/image/bg-parallax.jpg) no-repeat center;
-    /* background-attachment: fixed; */
-    /* background-repeat: no-repeat; */
-    width: 100%;
-    height: 50vh;
-    background-size: cover;
+    background: url(/image/banner_primeira.png) no-repeat center;
+    /*background-attachment: fixed;
+    background-repeat: no-repeat;*/
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%!important;
+    height: 85vh;
+    background-size: contain;
+}
+
+.fem {
+    background: url(/image/banner_feminino.png) no-repeat center;
+    margin-top: -1rem;
+    width: 100%!important;
+    height: 120vh;
+    background-size: contain;
+}
+.masc {
+    background: url(/image/banner_masculino.png) no-repeat center;
+    margin-top: -1rem;
+    width: 100%!important;
+    height: 120vh;
+    background-size: contain;
+}
+.alta {
+    background: url(/image/em_alta.png) no-repeat center;
+    margin-top: -1rem;
+    width: 100%!important;
+    height: 120vh;
+    background-size: contain;
 }
 
 .card{
-    width: 300px;
-    height: 250px;
-}
-
-.categorias img{
     width: 100%;
-
+    height: 300px;
+}
+.card .img-fluid {
+    width: 100%;
+    height: 100%;
+    
 }
 
+
+.row.teste-b{
+    width: calc(100% - 1rem);
+}
+.teste{
+    max-height: 5rem;
+}
+
+.button .btn {
+    margin-top: 50px;
+    margin-left: 80%;
+}
 /* Media Queries*/
 @media screen and (max-width:768px){
     .offcanvas{
         width: 80%!important;
+    }
+
+    .parallax{
+        background: url(/image/compra_mobile.png) no-repeat center;
+        width: 50vw;
+        background-position: center;
+        background-size: contain;
+    }
+    
+    .fem{
+        background: url(/image/banner_feminino.png) no-repeat center;
+        width: 50vw;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .card {
+        width: 49%;
+        margin-bottom: 20px;
+    }
+
+
+    .search-box{
+        width: 90%!important;
     }
 }
 
